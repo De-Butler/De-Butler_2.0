@@ -18,7 +18,7 @@ const TopBar = () => {
     setSelected(name);
   };
   return (
-    <div className="w-full h-12 bg-black flex items-center flex-wrap px-12 border-b-2 border-whilte">
+    <div className="w-screen sm:w-full h-12 bg-black flex items-center flex-wrap px-2 sm:px-12 border-b-2 border-white ">
       <Link to="/" onClick={handleLogoClick}>
         <img src={Logo} alt="Logo" className="w-24" />
       </Link>
@@ -40,7 +40,7 @@ const TopBar = () => {
               <motion.span
                 layoutId="pill-tab"
                 transition={{ type: 'spring', duration: 0.5 }}
-                className="absolute inset-0 z-0 bg-gradient-to-r from-yellow-400 via-red-300 to-orange-400 rounded-md"
+                className="absolute inset-0 z-0 bg-slate-600 rounded-md"
               />
             )}
           </Link>
@@ -65,7 +65,7 @@ const Chip = ({ text, selected, setSelected }) => {
         <motion.span
           layoutId="pill-tab"
           transition={{ type: 'spring', duration: 0.5 }}
-          className="absolute inset-0 z-0 bg-gradient-to-r from-yellow-400 via-red-300 to-orange-400 rounded-md"
+          className="absolute inset-0 z-0 bg-slate-600 rounded-md"
         ></motion.span>
       )}
     </button>

@@ -51,7 +51,7 @@ export const MainLogo = () => {
           />
         ))}
       </div>
-      <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center p-8 mb-60">
+      <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center p-8 mb-32">
         <h1 className="text-center text-7xl font-black uppercase text-white sm:text-8xl md:text-9xl">
           De-Butler
         </h1>

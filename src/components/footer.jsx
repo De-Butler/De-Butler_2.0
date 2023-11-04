@@ -10,10 +10,10 @@ export default function Footer() {
     { icon: PiTelegramLogoLight, link: 'https://t.me/DeButler' },
   ];
   return (
-    <div className="w-full h-28 bg-black  flex justify-between items-center border-t-2 border-white px-4">
+    <div className="w-full h-28 bg-black  flex justify-between items-center border-t-2 border-white px-20">
       <div className="flex flex-col text-center text-white gap-2">
-        <div className=" text-xl">Contact Us</div>
-        <span className="text-md mt-2">debutler2023@gmail.com</span>
+        <div className=" text-2xl font-semibold">Contact Us</div>
+        <span className="text-sm mt-2 ">debutler2023@gmail.com</span>
       </div>
       <div className="text-white">
         <div className="">De-Butler Community</div>

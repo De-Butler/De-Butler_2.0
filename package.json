@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "@material-tailwind/react": "^2.1.4",
     "@tailwindcss/forms": "^0.5.6",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -14,6 +16,7 @@
     "animejs": "^3.2.1",
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
+    "react-anime": "^4.1.1",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.18.0",
