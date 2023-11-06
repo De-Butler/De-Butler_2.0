@@ -7,6 +7,7 @@ import a6 from '../../assets/img/a6.png';
 import a7 from '../../assets/img/a7.png';
 import a8 from '../../assets/img/a8.png';
 import Logo from '../../assets/img/De-Butler-white.png';
+import ActivityPic from './activityPic';
 
 export default function ActivityMain() {
   // Create an array of image sources
@@ -23,9 +24,9 @@ export default function ActivityMain() {
   ];
 
   return (
-    <div className="w-full min-h-screen bg-neutral-950 flex justify-center items-center gap-20">
+    <div className="w-full sm:min-h-screen bg-neutral-950 sm:flex sm:justify-center sm:items-center sm:gap-20">
       <div className="text-white flex-col items-center justify-center ">
-        <h1 className="text-6xl font-bold">
+        <h1 className="text-6xl font-bold pt-24 sm:pt-0">
           Be Precursor <br />
           With De-Butler
         </h1>
@@ -36,7 +37,7 @@ export default function ActivityMain() {
           the frontrunners in the world of Web 3
         </p>
       </div>
-      <div className="grid grid-cols-3 min-w-[700px]">
+      <div className="hidden sm:grid sm:grid-cols-3 sm:min-w-[700px]">
         {activities.map((activity, index) => (
           <img
             key={index}
@@ -45,6 +46,10 @@ export default function ActivityMain() {
             className={`${activity.class} object-contain`}
           />
         ))}
+      </div>
+      <div className="sm:hidden mt-12">
+        
+        <ActivityPic />
       </div>
     </div>
   );

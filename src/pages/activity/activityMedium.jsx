@@ -22,7 +22,7 @@ const ActivityMedium = () => {
       const rssUrl = 'https://medium.com/feed/de-butler';
       const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(
         rssUrl
-      )}`;
+      )}&nocache=${new Date().getTime()}`;
 
       try {
         const response = await fetch(apiUrl);
@@ -43,7 +43,7 @@ const ActivityMedium = () => {
 
     fetchPosts();
   }, []);
-  
+
   const CARD_BUFFER =
     width > BREAKPOINTS.lg ? 3 : width > BREAKPOINTS.sm ? 2 : 1;
 

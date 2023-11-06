@@ -51,11 +51,11 @@ export const MainLogo = () => {
           />
         ))}
       </div>
-      <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center p-8 mb-32">
+      <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center p-8 mb-32 z-1">
         <h1 className="text-center text-7xl font-black uppercase text-white sm:text-8xl md:text-9xl">
           De-Butler
         </h1>
-        <p className="mb-6 mt-4 max-w-3xl text-center text-lg font-light text-neutral-500 md:text-xl">
+        <p className="mb-6 mt-4 max-w-3xl text-center text-lg font-light  text-neutral-500 md:text-xl">
           Our Mission is to incubate many builders in the Web3
           <br />
           ecosystem through a variety of Web3 project environments.

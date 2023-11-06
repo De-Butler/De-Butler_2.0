@@ -6,6 +6,7 @@ import ActivityPage from './pages/activityPage';
 import AboutPage from './pages/aboutPage';
 import Footer from '../src/components/footer';
 import HistoryPage from './pages/historyPage';
+
 function App() {
   return (
     <div className='h-fit w-full'>
@@ -15,7 +16,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/activity" element={<ActivityPage />} />
-        <Route path='/history' element={<HistoryPage/>}/>
+        {/* <Route path='/history' element={<HistoryPage/>}/> */}
       </Routes>
       <Footer />
     </div>

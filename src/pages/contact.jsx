@@ -17,10 +17,10 @@ export default function Contact() {
     <div className="bg-neutral-950 h-screen ">
       <div className="flex flex-col items-center justify-center">
         <h className="text-4xl text-white font-semibold mt-20 ">Contact Us</h>
-        <p className="text-white">
+        <p className="text-white text-sm sm:text-base">
           Any qusetion or remakrs? Just write us a message!
         </p>
-        <div className="bg-white p-8 rounded-lg w-1/3 h-[600px] mt-4">
+        <div className="bg-white p-8 rounded-lg w-[300px] sm:w-1/3 sm:min-h-[600px] mt-4">
           <form
             onSubmit={handleSubmit}
             action="mailto:debutler2023@gmail.com"
@@ -33,7 +33,7 @@ export default function Contact() {
                 <input
                   type="text"
                   name="first-name"
-                  className="border-b-2 border-black focus:outline-none"
+                  className="w-[100px] sm:w-[180px] border-b-2 border-black focus:outline-none overflow-scroll"
                 />
               </div>
               <div className="flex flex-col gap-2">
@@ -41,7 +41,7 @@ export default function Contact() {
                 <input
                   type="text"
                   name="last-name"
-                  className="border-b-2 border-black focus:outline-none"
+                  className="w-[100px] sm:w-[180px] border-b-2 border-black focus:outline-none overflow-scroll"
                 />
               </div>
             </div>
@@ -52,7 +52,7 @@ export default function Contact() {
                 <input
                   type="email"
                   name="mail"
-                  className="border-b-2 border-black focus:outline-none"
+                  className="w-[100px] sm:w-[180px] border-b-2 border-black focus:outline-none overflow-scroll"
                 />
               </div>
               <div className="flex flex-col gap-2">
@@ -60,13 +60,13 @@ export default function Contact() {
                 <input
                   type="tel"
                   name="phone"
-                  className="border-b-2 border-black focus:outline-none"
+                  className="w-[100px] sm:w-[180px] border-b-2 border-black focus:outline-none overflow-scroll"
                 />
               </div>
             </div>
 
             <p className="mb-2 mt-14 font-bold">Choose your question type</p>
-            <div className="flex space-x-4 mb-4">
+            <div className="w-full h-full flex flex-wrap justify-between space-x-4 mb-4">
               <label className="flex items-center">
                 <input
                   type="radio"
@@ -80,7 +80,8 @@ export default function Contact() {
                 <input type="radio" name="question-type" value="General" />
                 <span className="ml-2">General</span>
               </label>
-              <label className="flex items-center">
+
+              <label className="flex items-center px-10 sm:px-0 mb-4 mt-4 sm:mb-0 sm:mt-0">
                 <input type="radio" name="question-type" value="Cooperation" />
                 <span className="ml-2">Cooperation</span>
               </label>
