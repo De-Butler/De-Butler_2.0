@@ -16,7 +16,10 @@ const ActivityMedium = () => {
   const [posts, setPosts] = useState([]);
   const [ref, { width }] = useMeasure();
   const [offset, setOffset] = useState(0);
-
+  useEffect(() => {
+    console.log(posts);
+  }, [posts]);
+  
   useEffect(() => {
     const fetchPosts = async () => {
       const rssUrl = 'https://medium.com/feed/de-butler';
@@ -27,7 +30,7 @@ const ActivityMedium = () => {
       try {
         const response = await fetch(apiUrl);
         const data = await response.json();
-
+        console.log(data); 
         if (data.status === 'ok') {
           setPosts(
             data.items.map((item) => ({
@@ -35,6 +38,7 @@ const ActivityMedium = () => {
               author: item.author, // rss2json이 반환하는 author 필드
             }))
           );
+          console.log(posts); 
         }
       } catch (error) {
         console.error('Error fetching Medium posts:', error);
@@ -67,7 +71,7 @@ const ActivityMedium = () => {
 
   return (
     <section className="bg-neutral-950 py-8 pb-32" ref={ref}>
-      <div className="relative overflow-hidden p-4">
+      <div className="relative overflow-hidden p-4 sm:pr-32">
         <div className="mx-auto max-w-6xl">
           <div className="flex items-center justify-between mb-4">
             <h2 className="mb-4 text-5xl text-white font-bold">Research</h2>

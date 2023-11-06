@@ -29,12 +29,12 @@ export default function MainDescribe() {
         What De-Butler Does
       </h>
 
-      <div className="flex-col gap-4 sm:gap-0 flex sm:flex-row justify-around max-w-5xl mx-auto mt-32 mb-20 ">
+      <div className="flex-col gap-4 sm:gap-0 flex sm:flex-row justify-between max-w-6xl mx-auto mt-32 mb-20 ">
         {describeFeatures.map((feature, index) => (
-          <div key={index} className="flex-col justify-center ">
+          <div key={index} className="flex-col justify-center  ">
             {feature.img}
             <h3 className="text-3xl font-semibold mt-10 text-center">{feature.title}</h3>
-            <p className='w-full text-center text-sm sm:text-left sm:w-80 font-medium sm:text-base mt-6 px-10'>{feature.description}</p>
+            <p className='w-full text-center text-sm sm:text-left sm:w-80 font-medium sm:text-base mt-6 font-semibold'>{feature.description}</p>
           </div>
         ))}
       </div>

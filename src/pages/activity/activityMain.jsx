@@ -24,17 +24,19 @@ export default function ActivityMain() {
   ];
 
   return (
-    <div className="w-full sm:min-h-screen bg-neutral-950 sm:flex sm:justify-center sm:items-center sm:gap-20">
+    <div className="w-full sm:min-h-screen bg-neutral-950 sm:flex sm:justify-center px-4 sm:px-0 sm:items-center sm:gap-20">
       <div className="text-white flex-col items-center justify-center ">
-        <h1 className="text-6xl font-bold pt-24 sm:pt-0">
+        <h1 className="text-7xl font-bold pt-24 sm:pt-0">
           Be Precursor <br />
           With De-Butler
         </h1>
         <p className="text-2xl mt-10">
-          With De-Butler, explore and utilize everything
-          <br /> from the basics to advanced techniques! <br />
-          We hope our members will become <br />
-          the frontrunners in the world of Web 3
+          Explore and utilize everything from basic to
+          <br /> advanced techniques!
+        </p>
+        <p className='mt-6 text-2xl'>
+          We are supporting our members to become the <br />
+          frontrunners in the world of Web 3!
         </p>
       </div>
       <div className="hidden sm:grid sm:grid-cols-3 sm:min-w-[700px]">
@@ -48,7 +50,6 @@ export default function ActivityMain() {
         ))}
       </div>
       <div className="sm:hidden mt-12">
-        
         <ActivityPic />
       </div>
     </div>
