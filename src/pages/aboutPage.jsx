@@ -38,7 +38,7 @@ export default function AboutPage() {
             )}
             <div className="sm:w-[700px] h-fit sm:min-h-[400px] border border-white flex flex-col gap-4 py-4 sm:gap-12 justify-center px-10">
               <h1 className="text-white font-bold text-3xl sm:text-5xl">{section.title}</h1>
-              <p className="text-white text-xl sm:text-2xl">{section.content}</p>
+              <p className="text-white text-xl sm:text-3xl">{section.content}</p>
             </div>
             {!section.imageFirst && (
               <div className="sm:w-[700px] h-fit sm:min-h-[400px] border border-white">
@@ -65,21 +65,21 @@ const sections = [
   {
     title: 'As a Leader',
     content:
-      "Our academic society is dedicated to unlocking blockchain's potential to benefit technology and society at large.",
+      "We are supporting more people to contribute to Web 3 and unleash its potential.",
     image: first,
     imageFirst: true,
   },
   {
     title: 'As a Partner',
     content:
-      'De-Butler will be your partner, assisting to elevate your efforts to a new level of success.',
+      'Assisting to elevate your efforts to a new level of success.',
     image: second,
     imageFirst: false,
   },
   {
     title: 'As a Community',
     content:
-      'In our community, every member is valued and empowered, forging a path through the blockchain realm with confidence and camaraderie.',
+      'Support you in gaining insights through our Coummuity.',
     image: third,
     imageFirst: true,
   },
