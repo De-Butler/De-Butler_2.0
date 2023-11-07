@@ -27,7 +27,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="sm:inline-block gap-2 mt-4 hover:text-slate-500"
             >
-              <snsItem.icon className='w-12 sm:w-24 h-6' />
+              <snsItem.icon className='w-12 sm:w-16 h-6' />
             </a>
           ))}
         </div>

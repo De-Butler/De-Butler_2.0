@@ -43,24 +43,25 @@ const Nav = ({ isOpen, setIsOpen }) => {
         variants={linkWrapperVariants}
         className="flex flex-col gap-4 absolute bottom-8 left-8"
       >
-        <Link to="/" onClick={() => setIsOpen(false)}>
-          <NavLink text="Home" />
-        </Link>
-        <Link to="/about" onClick={() => setIsOpen(false)}>
-          <NavLink text="About" />
-        </Link>
-        <Link to="/activity" onClick={() => setIsOpen(false)}>
-          <NavLink text=" Activity" />
-        </Link>
-        <Link to="/contact" onClick={() => setIsOpen(false)}>
-          <NavLink text="Contact" />
-        </Link>
+        <div onClick={() => setIsOpen(false)}>
+          <NavLink text="Home" to="/" />
+        </div>
+        <div onClick={() => setIsOpen(false)}>
+          <NavLink text="About" to="/about" />
+        </div>
+        <div onClick={() => setIsOpen(false)}>
+          <NavLink text="Activity" to="/activity" />
+        </div>
+
+        <div onClick={() => setIsOpen(false)}>
+          <NavLink text="Contact" to="/contact" />
+        </div>
       </motion.div>
     </motion.nav>
   );
 };
 
-const NavLink = ({ text }) => {
+const NavLink = ({ text, to }) => {
   return (
     <motion.a
       className="inline-block z-10 text-slate-800 w-fit font-black text-7xl  transition-colors"
@@ -76,7 +77,9 @@ const NavLink = ({ text }) => {
       rel="nofollow"
       href="#"
     >
-      {text}
+      <Link to={to} className="no-underline text-current">
+        {text}
+      </Link>
     </motion.a>
   );
 };

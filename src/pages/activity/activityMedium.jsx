@@ -19,7 +19,7 @@ const ActivityMedium = () => {
   useEffect(() => {
     console.log(posts);
   }, [posts]);
-  
+
   useEffect(() => {
     const fetchPosts = async () => {
       const rssUrl = 'https://medium.com/feed/de-butler';
@@ -30,7 +30,7 @@ const ActivityMedium = () => {
       try {
         const response = await fetch(apiUrl);
         const data = await response.json();
-        console.log(data); 
+
         if (data.status === 'ok') {
           setPosts(
             data.items.map((item) => ({
@@ -38,7 +38,6 @@ const ActivityMedium = () => {
               author: item.author, // rss2json이 반환하는 author 필드
             }))
           );
-          console.log(posts); 
         }
       } catch (error) {
         console.error('Error fetching Medium posts:', error);
@@ -48,6 +47,9 @@ const ActivityMedium = () => {
     fetchPosts();
   }, []);
 
+  useEffect(() => {
+    console.log(posts);
+  }, [posts]);
   const CARD_BUFFER =
     width > BREAKPOINTS.lg ? 3 : width > BREAKPOINTS.sm ? 2 : 1;
 
