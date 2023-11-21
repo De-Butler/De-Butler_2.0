@@ -1,10 +1,8 @@
-import Hackathon from "./history/hackathon";
-import HistoryNext from "./history/historyNext";
+import { ActivityHistory } from "./history/activityHistory";
 export default function HistoryPage() {
   return(
     <>
-    <Hackathon/>
-    <HistoryNext/>
+    <ActivityHistory/>
     </>
   );
 }
