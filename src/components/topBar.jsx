@@ -5,8 +5,8 @@ import { useState } from 'react';
 import SideNav from './sideNav';
 const tabs = [
   { name: 'About', path: '/about' },
+  // { name: 'History', path: '/history' },
   { name: 'Activity', path: '/activity' },
-  { name: 'History', path: '/history' },
   { name: 'Contact', path: '/contact' },
 ];
 
