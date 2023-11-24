@@ -17,6 +17,9 @@ import ac13 from '../../assets/img/activity13.jpeg';
 import ac14 from '../../assets/img/activity14.png';
 import ac15 from '../../assets/img/activity15.jpg';
 import ac16 from '../../assets/img/activity16.png';
+import ac17 from '../../assets/img/activity17.jpeg';
+import ac18 from '../../assets/img/activity18.jpeg';
+import ac19 from '../../assets/img/activity19.jpeg';
 export const ActivityHistory = () => {
   return (
     <MouseImageTrail
@@ -39,6 +42,9 @@ export const ActivityHistory = () => {
         ac14,
         ac15,
         ac16,
+        ac17,
+        ac18,
+        ac19,
       ]}
     >
       <section className="h-screen bg-neutral-950">
@@ -56,7 +62,7 @@ const Copy = () => {
       <div className="mx-auto flex max-w-7xl items-end justify-between p-4 md:p-8">
         <div>
           <h1 className="mb-6 max-w-4xl text-6xl font-black leading-[1.1] text-slate-700 md:text-8xl">
-            Debutler <span className="text-slate-200">Plates</span>
+            Debutler <span className="text-slate-200">Session</span>
           </h1>
         </div>
       </div>

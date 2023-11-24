@@ -7,7 +7,7 @@ const tabs = [
   { name: 'About', path: '/about' },
   { name: 'Activity', path: '/activity' },
   { name: 'History', path: '/history' },
-  { name: 'Contact', path: '/contact' },
+  // { name: 'Contact', path: '/contact' },
 ];
 
 const TopBar = () => {
