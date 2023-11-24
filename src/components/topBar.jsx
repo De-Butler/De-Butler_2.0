@@ -20,7 +20,7 @@ const TopBar = () => {
   };
   return (
     
-      <div className="w-screen sm:w-full h-12 bg-black flex items-center justify-between sm:justify-normal flex-wrap px-2 sm:px-32 border-b-2 border-white ">
+      <div className="w-screen sm:w-full h-12 bg-black flex items-center justify-between sm:justify-normal flex-wrap px-2 sm:px-28 border-b-2 border-white ">
         <Link to="/" onClick={handleLogoClick}>
           <img src={Logo} alt="Logo" className="w-24" />
         </Link>

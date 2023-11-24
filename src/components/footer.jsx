@@ -2,6 +2,7 @@ import { BsMedium, BsInstagram } from 'react-icons/bs';
 import { PiTelegramLogoLight } from 'react-icons/pi';
 import { Link } from 'react-router-dom';
 import { RiTwitterXFill } from 'react-icons/ri';
+import ContactUsButton from './contactUsButton';
 export default function Footer() {
   const sns = [
     { icon: RiTwitterXFill, link: 'https://twitter.com/DeButler_' },
@@ -12,7 +13,7 @@ export default function Footer() {
   return (
     <div className="w-full h-32 sm:h-28 bg-black  flex  sm:justify-between items-center border-t-2 border-white justify-center sm:px-20">
       <div className="sm:flex flex-col text-center text-white gap-2 hidden">
-        <div className="text-sm  sm:text-2xl font-semibold">Contact Us</div>
+        <div className="text-sm  sm:text-2xl font-semibold"><ContactUsButton/></div>
         <span className="text-sm mt-2 ">debutler2023@gmail.com</span>
       </div>
       <div className="text-white flex flex-col sm:block ">
@@ -27,7 +28,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="sm:inline-block gap-2 mt-4 hover:text-slate-500"
             >
-              <snsItem.icon className='w-12 sm:w-16 h-6' />
+              <snsItem.icon className='w-10 sm:w-14 h-6' />
             </a>
           ))}
         </div>
